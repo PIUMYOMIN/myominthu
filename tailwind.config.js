@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -12,11 +12,11 @@ module.exports = {
       }
     },
     backgroundSize: {
-      'auto': 'auto',
-      'cover': 'cover',
-      'contain': 'contain',
-      '50%': '50%',
-      '16': '4rem',
+      auto: "auto",
+      cover: "cover",
+      contain: "contain",
+      "50%": "50%",
+      "16": "4rem"
     },
     colors: {
       "dark-purple": "#081A51",
@@ -76,19 +76,19 @@ module.exports = {
       "blue-900": "rgb(30 58 138)",
       "blue-950": "rgb(23 37 84)",
       "gray-200": "rgb(229 231 235)",
-      "gray-300" : "rgb(209 213 219)",
-      "gray-400" : "rgb(156 163 175)",
-      "gray-500" : "rgb(107 114 128)",
-      "gray-600" : "rgb(75 85 99)",
-      "gray-700" : "rgb(55 65 81)",
-      "gray-800" : "rgb(31 41 55)",
-      "gray-900" : "rgb(17 24 39)",
-      "gray-950" : "rgb(3 7 18)",
+      "gray-300": "rgb(209 213 219)",
+      "gray-400": "rgb(156 163 175)",
+      "gray-500": "rgb(107 114 128)",
+      "gray-600": "rgb(75 85 99)",
+      "gray-700": "rgb(55 65 81)",
+      "gray-800": "rgb(31 41 55)",
+      "gray-900": "rgb(17 24 39)",
+      "gray-950": "rgb(3 7 18)"
     },
     backgroundImage: {
       primary:
-        "linear-gradient(to right top, #000000, #000000, #000000, #000000, #000000, #0c0c0c, #141414, #1b1b1b, #2a2a2a, #393939, #494949, #5a5a5a)",
-    },
+        "linear-gradient(to right top, #000000, #000000, #000000, #000000, #000000, #0c0c0c, #141414, #1b1b1b, #2a2a2a, #393939, #494949, #5a5a5a)"
+    }
   },
   plugins: []
 };
