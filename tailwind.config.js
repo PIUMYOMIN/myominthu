@@ -87,7 +87,9 @@ module.exports = {
     },
     backgroundImage: {
       primary:
-        "linear-gradient(to right top, #000000, #000000, #000000, #000000, #000000, #0c0c0c, #141414, #1b1b1b, #2a2a2a, #393939, #494949, #5a5a5a)"
+        "linear-gradient(17deg, rgba(19,19,19,1) 5%, rgba(25,93,181,1) 93%)",
+      secondary:
+        "linear-gradient(0deg, rgba(19,19,19,1) 5%, rgba(16,60,139,1) 93%)"
     }
   },
   plugins: []

@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import '../../App.css';
+import { EffectCards } from 'swiper/modules';
 import {
   FaAlignRight,
   FaArrowAltCircleDown,
@@ -16,12 +21,13 @@ import Figma from "../../assets/logos/Figma.png";
 import Github from "../../assets/logos/Github.png";
 import Fiverr from "../../assets/logos/fiverr.png";
 import MyoMin from "../../assets/MyoMin.png";
+import Image from "../../assets/image.jpg";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
-  return <div className="w-full mx-auto">
-      <div className="flex flex-col items-center justify-center bg-primary text-white">
+  return <div className="w-full mx-auto bg-primary">
+      <div className="flex flex-col items-center justify-center text-white">
         <div className="w-full flex justify-center items-center px-2 mt-10 overflow-hidden relative">
           <div className="grid grid-cols-12 relative">
             <div className="col-span-12 md:col-span-7 order-2 lg:order-1 ml-0 lg:ml-10">
@@ -136,6 +142,117 @@ export default function Home() {
             </div>
           </div>
         </div>
+    </div>
+    <div className="p-2">
+      <div>
+        <div className="text-center py-5 text-2xl text-white">Portfolios</div>
       </div>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <Swiper
+          effect={'cards'}
+          grabCursor={true}
+          modules={[EffectCards]}
+          className="!w-full !h-full py-2 lg:grid-cols-12"
+        >
+          <SwiperSlide>
+            <div>
+              <div>
+                <img src={Image} alt="" />
+              </div>
+              <div className="p-2">
+                <div className="text-xl">
+                  1.Project Name
+                </div>
+                <div className="text-sm">
+                  Type: Online Shop
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div>
+              <div>
+                <img src={Image} alt="" />
+              </div>
+              <div className="p-2">
+                <div className="text-xl">
+                  2.Project Name
+                </div>
+                <div className="text-sm">
+                  Type: Online Shop
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div>
+              <div>
+                <img src={Image} alt="" />
+              </div>
+              <div className="p-2">
+                <div className="text-xl">
+                  3.Project Name
+                </div>
+                <div className="text-sm">
+                  Type: Online Shop
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+        <Swiper
+          effect={'cards'}
+          grabCursor={true}
+          modules={[EffectCards]}
+          className="!w-full !h-full py-2 lg:grid-cols-12"
+        >
+          <SwiperSlide>
+            <div>
+              <div>
+                <img src={Image} alt="" />
+              </div>
+              <div className="p-2">
+                <div className="text-xl">
+                  2.Project Name
+                </div>
+                <div className="text-sm">
+                  Type: Online Shop
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div>
+              <div>
+                <img src={Image} alt="" />
+              </div>
+              <div className="p-2">
+                <div className="text-xl">
+                  1.Project Name
+                </div>
+                <div className="text-sm">
+                  Type: Online Shop
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div>
+              <div>
+                <img src={Image} alt="" />
+              </div>
+              <div className="p-2">
+                <div className="text-xl">
+                  3.Project Name
+                </div>
+                <div className="text-sm">
+                  Type: Online Shop
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </div>
     </div>;
 }
