@@ -15,7 +15,7 @@ const router = createHashRouter([
         element: <Home />
       },
       {
-        path: "about", // Remove the leading slash
+        path: "about",
         element: <About />
       },
       {
