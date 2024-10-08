@@ -10,7 +10,7 @@ export default function ()
   const [open, setOpen] = useState(true);
   const [menu, setMenu] = useState(false);
   return <div>
-      <div className={`bg-dark-purple text-tahiti lg:h-full p-5 pt-8 md:mt-0 ${open ? "lg:w-72" : "w-20"} ${menu ? "mt-0 w-full" : "mt-[-100%] w-full"} duration-300 z-10 lg:relative absolute`}>
+      <div className={`bg-dark-purple text-tahiti lg:h-full p-5 pt-8 lg:mt-0 ${open ? "lg:w-72" : "w-20"} ${menu ? "md:mt-0 w-full" : "mt-[-100%] w-full"} duration-300 z-10 lg:relative absolute`}>
         <div className="lg:block hidden">
           <BsFillArrowLeftCircleFill className={`bg-dark-purple text-white rounded-full text-2xl text-tahiti absolute -right-2 top-20 cursor-pointer ${!open && "rotate-180"} duration-500`} onClick={() => setOpen(!open)} />
         </div>
