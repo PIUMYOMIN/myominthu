@@ -9,6 +9,12 @@ export default function ()
  {
   const [open, setOpen] = useState(true);
   const [menu, setMenu] = useState(false);
+
+  const handleLinkClick = () => {
+    if (menu) {
+      setMenu(false);
+    }
+  };
   return <div>
       <div className={`bg-dark-purple text-tahiti lg:h-full p-5 pt-8 lg:mt-0 ${open ? "lg:w-72" : "w-20"} ${menu ? "mt-0 w-full" : "mt-[-100%] w-full"} duration-300 z-10 lg:relative absolute`}>
         <div className="lg:block hidden">
@@ -26,30 +32,29 @@ export default function ()
         </div>
         <ul className="pt-2">
           <li className={`flex items-center text-white gap-x-4 cursor-pointer p-2 hover:bg-white hover:text-dark ${open ? "rounded-md" : "rounded-full justify-center"} mt-2`}>
-            <Link to="/" className="w-full">
+            <Link to="/" className="w-full" onClick={handleLinkClick}>
               <div className={`flex items-center gap-2 ${!open && "gap-2"}`}>
                 <FaHome className={`hover:bg-white hover:text-dark text-xl ${!open && "hover:rounded-full"}`} /> <span className={`block text-black ${!open && "hidden"}`}>Home</span>
               </div>
             </Link>
           </li>
-          {/* <li className={`flex items-center text-white gap-x-4 cursor-pointer p-2 hover:bg-white hover:text-dark ${open ? "rounded-md" : "rounded-full justify-center"} mt-2`}>
-            <Link to="about" className="w-full">
-              <div className={`flex items-center gap-2 ${!open && "gap-2"}`}>
-                <FaUser className={`hover:bg-white hover:text-dark text-xl ${!open && "hover:rounded-full"}`} /> <span className={`block text-black ${!open && "hidden"}`}>About</span>
-              </div>
-            </Link>
-          </li> */}
           <li className={`flex items-center text-white gap-x-4 cursor-pointer p-2 hover:bg-white hover:text-dark ${open ? "rounded-md" : "rounded-full justify-center"} mt-2`}>
-            <Link to="skills" className="w-full">
+            <Link to="skills" className="w-full" onClick={handleLinkClick}>
               <div className={`flex items-center gap-2 ${!open && "gap-2"}`}>
-                <FaUserCog className={`hover:bg-white hover:text-dark text-xl ${!open && "hover:rounded-full"}`} /> <span className={`block text-black ${!open && "hidden"}`}>Skills</span>
+                <FaUserCog className={`hover:bg-white hover:text-dark text-xl ${!open && "hover:rounded-full"}`} />
+                <span className={`block text-black ${!open && "hidden"}`}>
+                  Skills
+                </span>
               </div>
             </Link>
           </li>
           <li className={`flex items-center text-white gap-x-4 cursor-pointer p-2 hover:bg-white hover:text-dark ${open ? "rounded-md" : "rounded-full justify-center"} mt-2`}>
-            <Link to="services" className="w-full">
+            <Link to="services" className="w-full" onClick={handleLinkClick}>
               <div className={`flex items-center gap-2 ${!open && "gap-2"}`}>
-                <FaHome className={`hover:bg-white hover:text-dark text-xl ${!open && "hover:rounded-full"}`} /> <span className={`block text-black ${!open && "hidden"}`}>Services</span>
+                <FaHome className={`hover:bg-white hover:text-dark text-xl ${!open && "hover:rounded-full"}`} />
+                <span className={`block text-black ${!open && "hidden"}`}>
+                  Services
+                </span>
               </div>
             </Link>
           </li>
