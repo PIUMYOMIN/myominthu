@@ -21,7 +21,8 @@ import Figma from "../../assets/logos/Figma.png";
 import Github from "../../assets/logos/Github.png";
 import Fiverr from "../../assets/logos/fiverr.png";
 import MyoMin from "../../assets/MyoMin.png";
-import Image from "../../assets/image.jpg";
+import twoDthreeD from "../../assets/twoDthreeD.png";
+import OnlineShop from "../../assets/OnlineShop.png";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
@@ -157,11 +158,26 @@ export default function Home() {
           <SwiperSlide>
             <div>
               <div>
-                <img src={Image} alt="" />
+                <img src={twoDthreeD} alt="" />
               </div>
               <div className="p-2">
                 <div className="text-xl">
-                  1.Project Name
+                  1.Thai 2D 3D
+                </div>
+                <div className="text-sm">
+                  Type: Lottery
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div>
+              <div>
+                <img src={OnlineShop} alt="" />
+              </div>
+              <div className="p-2">
+                <div className="text-xl">
+                  2.Phone & Accessories
                 </div>
                 <div className="text-sm">
                   Type: Online Shop
@@ -172,29 +188,14 @@ export default function Home() {
           <SwiperSlide>
             <div>
               <div>
-                <img src={Image} alt="" />
+                <img src={twoDthreeD} alt="" />
               </div>
               <div className="p-2">
                 <div className="text-xl">
-                  2.Project Name
+                  3.Thai 2D 3D
                 </div>
                 <div className="text-sm">
-                  Type: Online Shop
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <div>
-                <img src={Image} alt="" />
-              </div>
-              <div className="p-2">
-                <div className="text-xl">
-                  3.Project Name
-                </div>
-                <div className="text-sm">
-                  Type: Online Shop
+                  Type: Lottery
                 </div>
               </div>
             </div>
@@ -209,11 +210,11 @@ export default function Home() {
           <SwiperSlide>
             <div>
               <div>
-                <img src={Image} alt="" />
+                <img src={OnlineShop} alt="" />
               </div>
               <div className="p-2">
                 <div className="text-xl">
-                  2.Project Name
+                  2.Phone & Accessories
                 </div>
                 <div className="text-sm">
                   Type: Online Shop
@@ -224,14 +225,14 @@ export default function Home() {
           <SwiperSlide>
             <div>
               <div>
-                <img src={Image} alt="" />
+                <img src={twoDthreeD} alt="" />
               </div>
               <div className="p-2">
                 <div className="text-xl">
-                  1.Project Name
+                  1.Thai 2D 3D
                 </div>
                 <div className="text-sm">
-                  Type: Online Shop
+                  Type: Lottery
                 </div>
               </div>
             </div>
@@ -239,11 +240,11 @@ export default function Home() {
           <SwiperSlide>
             <div>
               <div>
-                <img src={Image} alt="" />
+                <img src={OnlineShop} alt="" />
               </div>
               <div className="p-2">
                 <div className="text-xl">
-                  3.Project Name
+                  3.Phone & Accessories
                 </div>
                 <div className="text-sm">
                   Type: Online Shop
