@@ -4,7 +4,7 @@
 }
 
 .swiper-slide {
-  display: flex;
+  display: flex-start;
   align-items: start;
   justify-content: center;
   border-radius: 18px;
